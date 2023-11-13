@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block titulo %} Tienda {% endblock %}
+
+{% block contenido %} 
+
+
+<div class="card">
+
+    <main role="main" class="container">
+        
+      <div class="row">
+
+        <div class="col-md-7 ">
+
+          </br>
+          <h4 class="card-title" align="left">La última película reseñada</h4>
+          <div class="mt-4 p-4 bg-dark text-white rounded">
+            <div class="col-md-12 px-0">
+      
+                  <h1 class="display-8 font-italic">Cartera</h1>
+
+              
+            </div>
+          </div>
+          </br>
+
+          </br>
+          <div >
+            <h4 class="card-title" align="left">Una nota al azar</h4>
+
+          </div>
+    
+        </div>
+
+    
+        <aside class="col-md-5 ">
+
+    
+            {% if peliculassinresenia %}
+              <div class="p-4 ">
+                <h4 class="font-italic">Vistas aún sin reseñar</h4>
+                    <ol class="list-unstyled">
+                    </ol>
+              </div>
+            {% endif %}
+
+            {% if peliculasproximamente %}
+              <div class="p-4 bg-light text-black rounded">
+                <h4 class="font-italic">Lo que se viene...</h4>
+                    <ol class="list-unstyled">
+                    </ol>
+              </div>
+            {% endif %}
+ 
+            <div class="p-4">
+              <h4 class="font-italic">Buenos sitios</h4>
+              <ol class="list-unstyled">
+                  <li><a target="_blank" href="https://filmnoirboard.blogspot.com/">Film Noir Board</a></li>
+                  <li><a target="_blank" href="https://filmnoir.art.blog/">FilmsNoir.Net</a></li>
+                  <li><a target="_blank" href="http://noirestyle.org/forum/portada.php">Noirestyle</a></li>
+                  <li><a target="_blank" href="https://todofilmnoir.home.blog/">Todo Film Noir</a></li>
+                  <li><a target="_blank" href="http://wheredangerlives.blogspot.com/">Where Danger Lives</a></li>
+              </ol>
+            </div>
+
+            <div >
+              <h4 class="card-title" align="left">Una película al azar</h4>
+              <div class="p-4 bg-light text-black rounded">
+                <div class="col-md-12 px-0">
+    
+                  
+                </div>
+              </div>
+            </div>
+
+
+        </aside>
+    
+      </div>
+  
+
+      </br>
+      <div class="card-body bg-light text-black rounded">
+        <h4 class="card-title " align="center">Otras películas reseñadas últimamente</h4>
+        <div class="container  " align="center">
+        </div>
+      </div>
+      </br>
+  
+    </main><!-- /.container -->
+
+
+  <!--
+  <footer >
+    <p>
+      <a href="#">Ir arriba</a>
+    </p>
+  </footer>
+  -->
+
+</div> 
+  
+{% endblock %}
